@@ -2,9 +2,6 @@ pipeline {
     agent {
         label "demoAgent"
     }
-    parameters {
-        string(name: 'TIME', defaultValue: 'Hello Hongik~', description: 'What should I say?')
-    }
     stages {
         stage('Build') {
             steps {
@@ -14,7 +11,7 @@ pipeline {
         
         stage('Time') {
             steps {
-                echo "${params.TIME}!"
+                echo "$(date)"
             }
         }
         
