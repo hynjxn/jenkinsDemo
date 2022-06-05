@@ -11,7 +11,7 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                echo %date:-=% %time:-=%
+                echo '%date:-=% %time%'
             }
         }
     }
