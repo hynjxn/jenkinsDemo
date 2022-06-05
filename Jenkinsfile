@@ -14,7 +14,7 @@ pipeline {
         
         stage('Time') {
             steps {
-                sh('echo ${TIME}')
+                echo "${params.TIME}!"
             }
         }
         
