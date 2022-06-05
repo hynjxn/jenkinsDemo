@@ -8,20 +8,16 @@ pipeline {
                 echo 'Building..'
             }
         }
-        stage('Test') {
-            steps {
-                build 'maven'
-            }
-        }
+
         stage('Deploy') {
             steps {
-                echo 'Deploying....'
+                echo %date:-=% %time:-=%
             }
         }
     }
     post {
         always{
-            echo 'pipeline done change~'
+            echo 'jenkins 실습 done ~~'
         }
     }
 }
