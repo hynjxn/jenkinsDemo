@@ -11,7 +11,7 @@ pipeline {
         
         stage('Time') {
             steps {
-                echo '
+                echo 'time'
             }
         }
         
