@@ -18,7 +18,7 @@ pipeline {
     }
     post {
         always{
-            echo 'jenkins done~'
+            echo 'jenkins done~!!!!!!!!!!!'
         }
     }
 }
